@@ -1,0 +1,41 @@
+{
+  "name": "password-generated",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/js/index.js",
+  "dependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "scripts": {
+    "start": "webpack serve  --mode development --open --port 3000",
+    "dev": "webpack --mode development --entry ./src/js/index.js --output-path ./build",
+    "build": "webpack --mode production --entry ./src/js/index.js --output-path ./build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Afrozens/password-generated.git"
+  },
+  "keywords": [],
+  "author": "Jesus Chacon <Jesuszen2.6@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Afrozens/password-generated/issues"
+  },
+  "homepage": "https://github.com/Afrozens/password-generated#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "prettier": "2.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

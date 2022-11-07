@@ -1,0 +1,74 @@
+
+/* ********** Custom Properties ********** */
+/* ********** Reset ********** */
+@tailwind base;
+
+@layer base {
+    h1 {
+        @apply text-3xl font-fira font-bold md:text-4xl
+    }
+
+    h2 {
+        @apply text-xl font-fira font-semibold whitespace-nowrap md:text-2xl
+    }
+
+    h3 {
+        @apply text-sm font-fira font-semibold whitespace-nowrap md:text-lg
+    }
+
+    p {
+        @apply text-lg font-fira font-light md:text-xl
+    }
+
+    nav {
+        @apply text-2xl font-fira font-bold
+    }
+}
+/* ********** Components ********** */
+@tailwind components;
+
+@layer components {
+    .btn-primary {
+        @apply h-6 w-6 border-solid border border-gray-300 rounded inline-block mr-3 align-middle text-center bg-white cursor-pointer transition-all hover:border-gray-400
+    }
+
+    .btn-secundary {
+        @apply w-6 border-solid border border-gray-300 inline-block align-middle text-center bg-white cursor-pointer transition-all h-8 rounded-none flex-row-center
+    }
+}
+
+/* ********** Utilities ********** */
+@tailwind utilities;
+
+@layer utilities {
+
+    .flex-col-center {
+        @apply flex flex-col items-center
+    }
+
+    .flex-row-center {
+        @apply flex items-center 
+    }
+
+    .flex-center {
+        @apply justify-center items-center
+    }
+
+    .flex-col-start {
+        @apply flex flex-col
+    }
+
+    .mx-center {
+        @apply mx-auto my-0
+    }
+
+    .my-center {
+        @apply my-auto mx-0
+    }
+
+    .border-thin {
+        @apply border border-solid
+    }
+
+}
+/* ********** Site Styles ********** */
